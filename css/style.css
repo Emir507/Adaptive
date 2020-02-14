@@ -86,6 +86,14 @@ a {
   height: 100%;
 }
 
+.container-fluid div {
+  height: 100%;
+}
+
+.container-fluid div img {
+  height: 100%;
+}
+
 #about {
   height: 100vh;
 }
