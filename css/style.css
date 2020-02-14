@@ -77,9 +77,13 @@ a {
   color: #fff;
 }
 
-#home {
+.section__home {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+}
+
+.container-fluid {
+  height: 100%;
 }
 
 #about {
