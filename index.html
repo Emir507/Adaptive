@@ -112,8 +112,15 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore error rerum deserunt tenetur possimus
           laborum ut mollitia enim accusamus. Suscipit, cumque accusantium. Quod omnis soluta quae, ipsa velit
           voluptatum ad!</p>
-          <h1>Lorem, ipsum.</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae neque iure ullam laboriosam illum, dicta, repellat similique velit asperiores beatae maxime, aut voluptatibus delectus praesentium explicabo assumenda sequi dolor ducimus id earum quaerat vel voluptate consectetur? Autem saepe aperiam velit quaerat veniam, fugit doloribus voluptas commodi dolor veritatis perferendis sed. Reiciendis voluptatum fuga earum distinctio. Fugit accusantium ea cum doloribus neque pariatur, nisi quae sapiente aperiam maiores nihil modi est totam minus dicta cumque, suscipit expedita harum consequuntur placeat. Esse ratione quis aut atque numquam earum labore repudiandae optio, impedit cum debitis ipsum error et tempora deleniti odit cumque magni?</p>
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae neque iure ullam laboriosam illum,
+          dicta, repellat similique velit asperiores beatae maxime, aut voluptatibus delectus praesentium explicabo
+          assumenda sequi dolor ducimus id earum quaerat vel voluptate consectetur? Autem saepe aperiam velit quaerat
+          veniam, fugit doloribus voluptas commodi dolor veritatis perferendis sed. Reiciendis voluptatum fuga earum
+          distinctio. Fugit accusantium ea cum doloribus neque pariatur, nisi quae sapiente aperiam maiores nihil modi
+          est totam minus dicta cumque, suscipit expedita harum consequuntur placeat. Esse ratione quis aut atque
+          numquam earum labore repudiandae optio, impedit cum debitis ipsum error et tempora deleniti odit cumque magni?
+        </p>
       </div>
     </section>
   </div>
@@ -136,8 +143,11 @@
   </script>
 
   <script>
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`)
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
 
     $(document).ready(function () {
       $("#sidebar").mCustomScrollbar({
