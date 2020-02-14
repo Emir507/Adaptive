@@ -83,7 +83,13 @@ a {
 //   right: 0;
 // }
 
-// about__container
+// home container
+#home {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+// about container
 
 #about {
   height: 100vh;
