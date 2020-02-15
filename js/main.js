@@ -25,9 +25,9 @@ $(document).ready(function () {
     $('.nav-link').addClass('.nav-link--active');
   });
 
-  var height = $('.navbar').css('height');
-  var replaced = Number(height.replace('px', ''));
-  console.log(replaced);
+  // var height = $('.navbar').css('height');
+  // var replaced = Number(height.replace('px', ''));
+  // console.log(replaced);
   
   $("#sidebar").on("click", "a", function (event) {
     event.preventDefault();
@@ -35,7 +35,7 @@ $(document).ready(function () {
       top = $(id).offset().top;
       console.log(top);
     $('body,html').animate({
-        scrollTop: top - replaced
+        scrollTop: top
       }, 1500,
       function () {
         $('#sidebar').removeClass('active');
