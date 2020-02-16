@@ -1,5 +1,6 @@
 .section__home {
-  height: calc(100vh - 56px);
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 #sidebar {
@@ -73,19 +74,16 @@
   color: #fff;
 }
 
-#about {
-  height: calc(100vh - 58px);
-  padding: 10px;
-  overflow: hidden;
-}
-
 .portfolio {
-  height: calc(100vh - 56px);
-  background-color: crimson;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .portfolio__container {
   height: 100%;
+}
+
+.portfolio__container .p-0 {
+  padding-top: 20px;
 }
 
 .portfolio__container .carousel-item {
@@ -96,6 +94,7 @@
   position: absolute;
   color: #fff;
   bottom: calc(5px - 5px);
+  height: auto;
 }
 
 a {
