@@ -25,21 +25,22 @@ $(document).ready(function () {
     $('.nav-link').addClass('.nav-link--active');
   });
 
-  // var height = $('.navbar').css('height');
-  // var replaced = Number(height.replace('px', ''));
-  // console.log(replaced);
+  var height = $('.navbar').css('height');
+  var replaced = Number(height.replace('px', ''));
+  console.log(replaced);
   
   $("#sidebar").on("click", "a", function (event) {
     event.preventDefault();
+    $('#sidebar').removeClass('active');
+    $('.overlay').removeClass('active');
     var id = $(this).attr('href'),
-      top = $(id).offset().top;
+      top = $(id).offset().top - replaced;
       console.log(top);
     $('body,html').animate({
         scrollTop: top
-      }, 1500,
+      }, 1000,
       function () {
-        $('#sidebar').removeClass('active');
-        $('.overlay').removeClass('active');
+
       }
     );
   });

@@ -1,0 +1,15 @@
+.portfolio {
+  height: calc(100vh - 58px);
+  background-color: crimson;
+}
+.portfolio__container {
+  height: 100%;
+  .carousel-item {
+    position: relative;
+    div {
+      position: absolute;
+      color: #fff;
+      bottom: calc(5px - 5px);
+    }
+  }
+}
