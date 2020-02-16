@@ -4,6 +4,11 @@
 }
 .portfolio__container {
   height: 100%;
+  .container-fluid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }  
   .p-0 {
     padding-top: 20px;
   }
@@ -16,4 +21,10 @@
       height: auto;
     }
   }
+}
+.title {
+  align-self: center;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }

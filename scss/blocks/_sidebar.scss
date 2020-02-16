@@ -16,7 +16,12 @@
 #sidebar.active {
   left: 0;
 }
-
+.nav-link {
+  color: #fff;
+}
+.nav-link--active {
+    color: #007bff;
+}
 #dismiss {
   width: 35px;
   height: 35px;
@@ -59,10 +64,5 @@
   padding: 0;
   .nav-link--active a{
     color: #343BE5;
-  }
-}
-.sidebar__list-item {
-  a {
-    color: #fff;
   }
 }
