@@ -1,6 +1,11 @@
 .portfolio {
-  height: calc(var(--vh, 1vh) * 100);
-  // height: calc(100vh - 57px);
+  height: 100vh;
+  .carousel-indicators li {
+    background-color: grey;
+  }
+  .carousel-indicators .active {
+    background-color: #000;
+  }
 }
 .portfolio__container {
   height: 100%;
@@ -17,7 +22,7 @@
     div {
       position: absolute;
       color: #fff;
-      bottom: calc(5px - 5px);
+      bottom: 10%;
       height: auto;
     }
   }
@@ -27,4 +32,8 @@
   position: absolute;
   top: 0;
   z-index: 1;
+  font-family: 'Pacifico', cursive;
+}
+.carousel-caption {
+  font-family: 'Lobster', cursive;
 }

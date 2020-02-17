@@ -22,3 +22,19 @@ a {
 .m-0 {
   margin: 0;
 }
+.carousel-control-next,
+.carousel-control-prev {
+  height: 10%;
+  top: 45%;
+}
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 3rem;
+  color: black;
+}
+
+.circle li{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
