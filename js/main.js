@@ -1,23 +1,23 @@
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
-let slides = $('#portfolio .carousel-item');
-console.log(slides);
-for (let i = 0; i < slides.length; i++) {
-  if (slides[0].classList.contains("active")) {
-    console.log('активный класс у 1го элемента');
-  }
-}
 
 $('#portfolio .carousel').carousel({
   wrap: false,
   interval: false
 })
+function calcHeight(parametr1, parametr2) {
+  return Number(parametr1.replace("px", '')) - Number(parametr2.replace("px", ''));
+}
 
 let navbarHeight = $('.navbar').css('height');
 let portfolioHeight = $('#portfolio').css('height');
-let firstPageHeight = Number(portfolioHeight.replace("px", "")) - Number(navbarHeight.replace('px', ''));
-console.log(firstPageHeight);
-$('#portfolio').css('height', firstPageHeight);
+let feedbackHeight = $('#feedback').css('height');
+
+let portfolioPageHeight = calcHeight(portfolioHeight, navbarHeight);
+$('#portfolio').css('height', portfolioPageHeight);
+
+let feedbackPageHeight = calcHeight(feedbackHeight, navbarHeight);
+$('#feedback').css('height', feedbackPageHeight);
 
 
 $(document).ready(function () {

@@ -86,8 +86,7 @@
   padding: 10px;
   -webkit-box-shadow: black 0px 5px 21px;
           box-shadow: black 0px 5px 21px;
-  font-weight: 500;
-  font-family: 'Comfortaa', italic;
+  font-family: 'Pacifico';
 }
 
 .portfolio {
@@ -144,6 +143,63 @@
 
 .carousel-caption {
   font-family: 'Lobster', cursive;
+}
+
+.feedback {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #c0c0c0c0;
+}
+
+.feedback .btn {
+  width: 100%;
+  font-family: 'Lobster';
+}
+
+.feedback__container {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 81%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 20px;
+          box-shadow: 0px 5px 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.feedback__container h3 {
+  font-family: 'Pacifico';
+}
+
+.feedback__container > div {
+  width: 30%;
+}
+
+.form-group textarea {
+  resize: none;
+}
+
+.form-control {
+  font-family: 'Pacifico', cursive;
 }
 
 a {
